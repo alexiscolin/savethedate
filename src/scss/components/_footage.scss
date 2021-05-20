@@ -1,0 +1,65 @@
+.c-footage {
+    &_flower {
+        opacity: 1;
+        bottom: 105%;
+        
+        &--left {
+            left: 0;
+
+            &--1,
+            &--2,
+            &--3 { 
+                width: 28%; 
+                left: -7%;
+            }
+            &--2 { left: -12%; }
+            &--3 { left: -20%; }
+
+            &--1 {
+                bottom: 56%;
+                width: 30%;
+            }
+        }
+
+        &--right {
+            right: 0;
+
+            &--1 { width: 16%; }
+            &--2 { width: 30%; }
+        }
+    }
+
+    &_bloom {
+        bottom: 105%;
+
+        &--curve {
+            width: 7%;
+
+            &--1 {
+                left: 10%;
+                transform: rotate(180deg);
+            }
+            &--2 {
+                left: 67%;
+                transform: rotate(-40deg);
+            }
+            &--3 {
+                left: 30%;
+                transform: rotate(100deg);
+            }
+        }
+
+        &--flat {
+            width: 4%;
+
+            &--1 {
+                left: 22%;
+                transform: rotate(180deg);
+            }
+            &--2 {
+                left: 37%;
+                transform: rotate(180deg);
+            }
+        }
+    }
+}

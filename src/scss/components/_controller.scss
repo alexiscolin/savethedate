@@ -1,0 +1,65 @@
+.c-controller {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    left: -1px;
+    right: -1px;
+    height: 10vh;
+    max-height: calc(10vmin / #{$canvas-ratio-width/$canvas-ratio-height});
+    bottom: -1px;
+    background: $c-background;
+    padding: 0 0 1rem;
+
+    &_btns {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    &_btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 6.5vh;
+        max-height: calc(5vmin / #{$canvas-ratio-width/$canvas-ratio-height});
+        width: 6.5vh;
+        max-width: calc(5vmin / #{$canvas-ratio-width/$canvas-ratio-height});
+        border-radius: 60px;
+        border: 2px solid $c-controllers;
+        margin-top: 10px;
+        margin-top: min(2vmin,10px);
+        background: transparent;
+        color: $c-controllers;
+        outline: none;
+        cursor: pointer;
+        font-size: 20px;
+        font-size: min(4vmin,20px);
+
+        @media screen and (orientation:landscape) and (max-width: 700px) { 
+            margin-top: 0;
+        }
+
+        &--sm {
+            height: 50px;
+            width: 50px;
+            border: 0;
+        }
+    }
+
+    &_progress {
+        width: calc(100% - 2px);
+        height: 5px;
+        margin-left: 1px;
+        background-color: $c-background;
+
+        &_bar {
+            width: 100%;
+            height: 100%;
+            background-color: $c-controllers;
+            transform: scaleX(0);
+            transform-origin: 0 50%;
+        }
+    }
+}
+

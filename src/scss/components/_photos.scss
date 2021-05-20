@@ -1,0 +1,39 @@
+
+.c-photo {
+    width: 95%;
+    padding: .6%;
+    background-color: $c-photo;
+    box-shadow: 0 0 3px rgba(0,0,0,.25);
+    color: $c-title;
+    top: 115%;
+
+    &_img {
+        width: 100%;
+        display: block;
+        padding: 1.2%;
+
+    }
+
+    &_text {
+        display: flex;
+        flex-direction: column;
+        margin: 3%;
+        line-height: 1.8;
+        font-family: modernline, cursive;
+        font-size: 7vmin;
+        font-size: min(7vmin, 36px);
+        text-align: center;
+        font-weight: 500;
+    }
+
+    &--triptic {
+        width: 56%;
+        transform: rotate(-10deg);
+
+        &_img {
+            height: 48vmin;
+            max-height: 240px;
+            object-fit: cover;
+        }
+    }
+}

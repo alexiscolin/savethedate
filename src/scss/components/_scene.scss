@@ -1,0 +1,53 @@
+.c-scene {
+    position: relative;
+    width: 100%;
+    height: $canvas-height * 1vh - 8vh;
+    $height-minsize: $canvas-height * 1vmin - 8vmin;
+    max-height: calc(#{$height-minsize} / #{$canvas-ratio-width/$canvas-ratio-height});
+    overflow: hidden;
+
+    & > * {
+        position: absolute;
+    }
+
+    &_background {
+        width: 100%;
+        height: 200%;
+        bottom: 0;
+        object-fit: cover;
+        object-position: center;
+        opacity: .8;
+    }
+
+    &_title {
+        width: 92%;
+        top: 50%;
+        left: 53%;
+        transform: translate3d(-50%, -50%, 0);
+    }
+
+    &_photo {
+        left: 2.5%;
+
+        &--couple {
+            transform: rotate(30deg);
+        }
+        &--simple {
+            left: 22%;
+            transform: rotate(-8deg);
+        }
+        &--invit {
+            width: 73%;
+            left: -2%;
+            transform: rotate(-10deg);
+        }
+        &--triptic {
+            transform: rotate(-12deg);
+            left: 58%;
+        }
+    }
+
+    &_invitation {
+        left: 10%;
+    }
+}

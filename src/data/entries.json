@@ -1,0 +1,21 @@
+{
+    "theme": "theme1",
+    "texts": {
+        "wifeName": "Caroline",
+        "husbandName": "Julien",
+        "intro": "Se marient <3",
+        "dateDay": "24",
+        "dateMonth": "Juillet",
+        "dateYear": "2020",
+        "invit": "vous invitent à leur mariage",
+        "place": "au 20 rue de Paris à Lyon"
+    },
+    "photos": {
+        "couple": "https://i.postimg.cc/pdCzMJ1m/photo1.jpg",
+        "invit": "https://i.postimg.cc/wvBJqRS0/photo2.jpg",
+        "simple": "https://i.postimg.cc/mZ53rVZM/photo3.jpg",
+        "triptic1": "https://i.postimg.cc/nLpBWPT8/photo4.jpg",
+        "triptic2": "https://i.postimg.cc/wjhD0pXc/photo5.jpg",
+        "triptic3": "https://i.postimg.cc/XYMwfJCY/photo6.jpg"
+    }
+}

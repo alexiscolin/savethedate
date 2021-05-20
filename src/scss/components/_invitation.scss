@@ -1,0 +1,55 @@
+.c-invitation {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12% 0;
+    top: 45%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+
+    & > * {
+        position: relative;
+    }
+
+    &_bg {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background: $c-text-background;
+        opacity: 0;
+    }
+
+    &_brides {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: modernline, cursive;
+        font-size: 7vmin;
+        font-size: min(9vmin, 45px);
+        line-height: 1.7;
+        margin: 0 0 25%;
+    }
+
+    &_wording,
+    &_infos {
+        font-family: 'Playfair Display', serif;
+        color: $c-text;
+        font-size: 4vmin;
+        font-size: min(4vmin, 20px);
+    }
+
+    &_infos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        &_date {
+            font-size: 5vmin;
+            font-size: min(6vmin, 30px);
+            margin: 12% 0 2%;
+        }
+    }
+}

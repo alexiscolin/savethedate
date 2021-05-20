@@ -1,0 +1,70 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+        
+.o-layout {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    background-color: $c-background;
+    overflow: hidden;
+
+    &_canvas {
+        // position
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate3d(-50%, -50%, 0);
+
+        // ratio size
+        $width-size: $canvas-height * 1vh;
+        $width-minsize: $canvas-height * 1vmin;
+
+        width: calc(#{$width-size} * (#{$canvas-ratio-width/$canvas-ratio-height}));
+        height: $canvas-height * 1vh;
+        max-width: $canvas-height * 1vmin - 8vmin;
+        max-height: calc(#{$width-minsize} / #{$canvas-ratio-width/$canvas-ratio-height});
+        
+        // content
+        background: white;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+.o-forground {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: $c-controllers;
+    opacity: 1;
+    transition: ease opacity 1s;
+    pointer-events: none;
+
+    &--device {
+        display: none;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Playfair Display', serif;
+        color: $c-text;
+        z-index: 999;
+        text-align: center;
+        line-height: 1.6;
+
+        @media screen and (orientation:landscape) and (max-width: 700px) { 
+            display: flex;
+        }
+    }
+}
+

@@ -1,0 +1,29 @@
+
+.cache, .draw {
+    fill: none;
+}
+
+.CacheDate {
+    clip-path: url(#clip-path-date);
+}
+
+.draw {
+    stroke: $c-title;
+    stroke-miterlimit: 10;
+    stroke-width: 27px;
+    stroke-dasharray: 4100 8500;
+    stroke-dashoffset: 4100;
+
+    &--date {
+        stroke-dasharray: 8050 16200;
+        stroke-dashoffset: 8050;
+    }
+}
+
+.CacheSave {
+    clip-path: url(#clip-path-save);
+}
+
+.js-savedate-the {
+    opacity: 0;
+}

@@ -1,0 +1,36 @@
+
+.c-date {
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: modernline, cursive;
+    font-size: 7.5vmin;
+    font-size: min(11vmin, 55px);
+    top: 25%;
+
+    &_wrapper {
+        display: flex;
+        align-items: center;
+        line-height: 1;
+        align-self: flex-start;
+        margin-left: 28%;
+    }
+
+    &_day {
+        font-size: 20vmin;
+        font-size: min(30vmin, 138px);
+        padding-left: 20%;
+    }
+    &_month {
+        align-self: flex-start;
+        margin-left: 15%;
+        line-height: 2.5;
+    }
+    &_year {
+        line-height: 1;
+        align-self: flex-start;
+        margin-left: 45%;
+    }
+}
